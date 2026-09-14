@@ -1,4 +1,4 @@
-# Portfolio — Nathan R., BTS SIO option SISR
+# Portfolio — Nathan R., BTS SIO 2ème année option SISR
 
 Portfolio statique présentant mes projets de formation, mon stage, mes projets
 personnels d'apprentissage, mon CV, mon tableau de synthèse E4 et ma veille

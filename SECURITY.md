@@ -23,7 +23,7 @@ données, aucune API privée, aucun formulaire, aucune clé, aucun tracker.
 
 Si vous découvrez une faille ou une donnée sensible exposée (capture non
 anonymisée, information nominative, secret), contactez-moi :
-nathan.ramos30@gmail.com. Ne publiez pas la donnée sensible ailleurs.
+nathan.rama001@gmail.com. Ne publiez pas la donnée sensible ailleurs.
 
 ## Limites assumées
 

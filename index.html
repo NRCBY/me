@@ -3,51 +3,100 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portfolio — Nathan Rama, BTS SIO SISR</title>
-<meta name="description" content="Portfolio professionnel d'un étudiant en BTS SIO option SISR : projets, stages, compétences, tableau de synthèse E4 et veille technologique.">
-<meta name="color-scheme" content="light">
+<title>Portfolio — Nathan Rama | BTS SIO 2ème année option SISR</title>
+<meta name="description" content="Portfolio de Nathan Rama, étudiant en BTS SIO 2ème année option SISR : infrastructures réseaux, administration systèmes, sécurité et réalisations techniques.">
+<meta name="color-scheme" content="dark">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="site-wrapper">
 <a class="lien-evitement" href="#contenu">Aller au contenu principal</a>
 <header class="site">
   <div class="bandeau">
     <div>
-      <p class="titre-metier">Nathan Rama — Étudiant en BTS SIO option SISR</p>
+      <p class="brand-title">Nathan Rama</p>
+      <p class="titre-metier">BTS SIO 2ème année option SISR · Systèmes & Réseaux</p>
     </div>
     <nav aria-label="Navigation principale">
-      <button id="burger" class="btn" aria-expanded="false" aria-controls="menu-principal" style="display:none">Menu</button>
       <ul id="menu-principal">
-        <li><a href="index.html">Accueil</a></li><li><a href="cv.html">CV</a></li><li><a href="projets/index.html">Projets</a></li><li><a href="tableau-e4.html">Tableau E4</a></li><li><a href="veille.html">Veille</a></li>
+        <li><a href="index.html" class="actif" aria-current="page">Accueil</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projets/index.html">Projets</a></li>
+        <li><a href="tableau-e4.html">Tableau E4</a></li>
+        <li><a href="veille.html">Veille</a></li>
       </ul>
     </nav>
   </div>
 </header>
 <main id="contenu">
-<h1>Accueil</h1>
-<div class="carte">
-  <h3>Bienvenue</h3>
-  <p>Je suis Nathan Rama, étudiant en bts sio option sisr à ESUPEC / Lycée Sainte-Marie, Cholet (2025-2026).</p>
-  <p>Développer mes compétences en administration systèmes et réseaux, support informatique, supervision et cybersécurité.</p>
-  <p><strong>Recherche :</strong> stage de 2e année en systèmes et réseaux. Contact : <a href="mailto:nathan.ramos30@gmail.com" rel="noopener noreferrer">nathan.ramos30@gmail.com</a>.</p>
-  <p class="note"><strong>Transparence :</strong> les projets de cybersécurité présentés ici sont des <em>apprentissages encadrés</em>
-  (laboratoires autorisés, veille, exercices sur données fictives). Ils ne constituent ni des expertises professionnelles ni des audits.</p>
-</div>
+<section class="hero-banner">
+  <div class="hero-tagline">Architecting Resilient Networks & Infrastructure</div>
+  <h1 class="hero-title">Nathan Rama</h1>
+  <p class="hero-desc">
+    Étudiant en <strong>BTS SIO 2ème année option SISR</strong> à ESUPEC / Lycée Sainte-Marie, Cholet.
+    Passionné par l'administration systèmes (Linux/Windows Server), le routage Cisco, la sécurité des accès et la supervision d'infrastructures d'entreprise.
+  </p>
+  <div class="hero-actions">
+    <a href="projets/index.html" class="btn">Explorer mes projets</a>
+    <a href="mailto:nathan.rama001@gmail.com" class="btn btn-secondary">Me contacter</a>
+    <a href="cv.html" class="btn btn-secondary">Consulter le CV</a>
+  </div>
+</section>
+
+<h2>Compétences & Domaines clés</h2>
 <div class="grille">
-  <div class="carte"><h3><a href="projets/index.html" rel="noopener noreferrer">Projets et stages</a></h3>
-    <p>Stage PC PRO TECH, maquette réseau, administration Windows/Linux, projets d'apprentissage cybersécurité (analyse statique, OSINT, OWASP, OPSEC).</p></div>
-  <div class="carte"><h3><a href="cv.html" rel="noopener noreferrer">CV</a></h3>
-    <p>Parcours, formations et expériences.</p></div>
-  <div class="carte"><h3><a href="tableau-e4.html" rel="noopener noreferrer">Tableau de synthèse E4</a></h3>
-    <p>Réalisations croisées avec les compétences du référentiel BTS SIO.</p></div>
-  <div class="carte"><h3><a href="veille.html" rel="noopener noreferrer">Veille technologique</a></h3>
-    <p>Méthode, sujets suivis et bibliographie.</p></div>
+  <div class="carte">
+    <span class="badge">Systèmes</span>
+    <h3>Administration Systèmes</h3>
+    <p>Windows Server (Active Directory, GPO, DNS, DHCP), distributions Linux (Debian, Ubuntu), scripts d'automatisation PowerShell et Bash.</p>
+  </div>
+  <div class="carte">
+    <span class="badge">Réseaux</span>
+    <h3>Infrastructures Réseaux</h3>
+    <p>Architecture LAN/VLAN, routage inter-VLAN, protocoles de routage, maquettage sous Cisco Packet Tracer, adressage IPv4/IPv6.</p>
+  </div>
+  <div class="carte">
+    <span class="badge">Cybersécurité</span>
+    <h3>Sécurité & Conformité</h3>
+    <p>Authentification multifacteur (MFA), règles OPSEC, sensibilisation OWASP Top 10, analyse statique de binaires et méthodologie OSINT.</p>
+  </div>
+  <div class="carte">
+    <span class="badge">Support & Exploitation</span>
+    <h3>Support & Maintenance</h3>
+    <p>Diagnostic d'incidents matériels et logiciels, télé-assistance, déploiement de postes et bonnes pratiques ITIL.</p>
+  </div>
 </div>
+
+<h2>Parcours & Épreuves du BTS</h2>
+<div class="grille">
+  <div class="carte">
+    <h3><a href="projets/index.html">Projets & Réalisations techniques</a></h3>
+    <p>Stage PC PRO TECH, maquette réseau Packet Tracer, lab Windows/Linux et projets d'apprentissage en sécurité.</p>
+  </div>
+  <div class="carte">
+    <h3><a href="tableau-e4.html">Tableau de synthèse E4</a></h3>
+    <p>Matrice croisant les réalisations en entreprise et en formation avec les compétences du référentiel officiel BTS SIO.</p>
+  </div>
+  <div class="carte">
+    <h3><a href="veille.html">Veille technologique</a></h3>
+    <p>Sujets suivis, sources d'information, outils de veille automatisée et synthèse d'actualité cyber & réseau.</p>
+  </div>
+  <div class="carte">
+    <h3><a href="cv.html">Curriculum Vitae</a></h3>
+    <p>Formations académiques, certifications préparées, expériences professionnelles et coordonnées complètes.</p>
+  </div>
+</div>
+
+<div class="note">
+  <strong>Transparence & Déontologie :</strong> Les projets d'apprentissage en cybersécurité sont menés dans un cadre de formation encadré (laboratoires virtuels isolés, données fictives) et ne constituent en aucun cas des audits ou interventions professionnelles non autorisées.
+</div>
+
 </main>
 <footer class="site">
-  <p>Nathan Rama — Étudiant en BTS SIO option SISR · ESUPEC / Lycée Sainte-Marie, Cholet · <span id="annee-courante"></span></p>
-  <p>Contact : <a href="mailto:nathan.rama001@gmail.com" rel="noopener noreferrer">nathan.rama001@gmail.com</a> · <a href="security.html" rel="noopener noreferrer">Sécurité du site</a></p>
+  <p>Nathan Rama — Étudiant en BTS SIO 2ème année option SISR · ESUPEC / Lycée Sainte-Marie, Cholet · <span id="annee-courante"></span></p>
+  <p>Contact : <a href="mailto:nathan.rama001@gmail.com">nathan.rama001@gmail.com</a> · <a href="security.html">Sécurité du site</a></p>
 </footer>
+</div>
 <script src="js/main.js" defer></script>
 </body>
 </html>
