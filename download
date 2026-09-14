@@ -1,0 +1,24 @@
+# Secrets et environnement
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+*.p12
+*.pfx
+
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# Dépendances (si ajoutées un jour)
+node_modules/
+
+# Captures brutes non anonymisées (jamais publiées telles quelles)
+assets/brut/

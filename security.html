@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sécurité du site — Portfolio BTS SIO SISR</title>
+<meta name="description" content="Mesures de sécurité appliquées à ce portfolio statique et limites résiduelles.">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="lien-evitement" href="#contenu">Aller au contenu principal</a>
+<header class="site">
+  <div class="bandeau">
+    <div>
+      <p class="titre-metier">Nathan Ramos — Étudiant en BTS SIO option SISR</p>
+    </div>
+    <nav aria-label="Navigation principale">
+      <button id="burger" class="btn" aria-expanded="false" aria-controls="menu-principal" style="display:none">Menu</button>
+      <ul id="menu-principal">
+        <li><a href="index.html">Accueil</a></li><li><a href="cv.html">CV</a></li><li><a href="projets/index.html">Projets</a></li><li><a href="tableau-e4.html">Tableau E4</a></li><li><a href="veille.html">Veille</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+<h1>Sécurité du site</h1>
+<div class="carte">
+  <h3>Ce qui est appliqué</h3>
+  <ul>
+    <li>Site 100 % statique : aucun compte, aucune authentification, aucune base de données, aucune API, aucun formulaire.</li>
+    <li>JavaScript minimal, sans dépendance ni script tiers (aucun tracker, aucun CDN).</li>
+    <li>Aucune injection HTML dynamique côté client : tout le contenu est généré en HTML statique.</li>
+    <li>Headers de sécurité configurables selon l'hébergeur (fichiers <code>_headers</code> et <code>.htaccess</code> fournis) :
+      Content-Security-Policy restrictive, <code>X-Content-Type-Options: nosniff</code>,
+      <code>Referrer-Policy: strict-origin-when-cross-origin</code>, Permissions-Policy restrictive.</li>
+    <li>Aucune donnée personnelle sensible publiée (téléphone et adresse non publiés ; captures à anonymiser avant ajout).</li>
+    <li>Liens externes en <code>rel="noopener noreferrer"</code>.</li>
+  </ul>
+</div>
+<div class="carte">
+  <h3>Limites et risques résiduels (honnêteté)</h3>
+  <ul>
+    <li>Aucun site n'est « sécurisé à 100 % » : ce portfolio réduit la surface d'attaque, il ne l'élimine pas.</li>
+    <li>L'hébergeur peut ne pas appliquer tous les headers (ex. GitHub Pages ne permet pas de personnaliser les headers).</li>
+    <li>L'adresse e-mail publiée peut être captée par des robots (spam) — c'est un choix assumé pour être contactable.</li>
+    <li>Le principal risque reste humain : publier par mégarde une capture non anonymisée. La checklist avant publication
+      (fichier <code>CHECKLIST-PUBLICATION.md</code>) sert de garde-fou.</li>
+  </ul>
+</div>
+</main>
+<footer class="site">
+  <p>Nathan Ramos — Étudiant en BTS SIO option SISR · ESUPEC / Lycée Sainte-Marie, Cholet · <span id="annee-courante"></span></p>
+  <p>Contact : <a href="mailto:nathan.ramos30@gmail.com" rel="noopener noreferrer">nathan.ramos30@gmail.com</a> · <a href="security.html" rel="noopener noreferrer">Sécurité du site</a></p>
+</footer>
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+:root{
+  --bleu-nuit:#12283f; --bleu-nuit-2:#0d1e31; --gris-clair:#f4f6f8;
+  --blanc:#ffffff; --accent:#1f7a8c; --texte:#1d2733; --texte-muted:#4a5560;
+  --bordure:#d8dee4; --focus:#e8a13a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--texte);background:var(--gris-clair);line-height:1.6}
+header.site{background:var(--bleu-nuit);color:var(--blanc)}
+.bandeau{max-width:960px;margin:0 auto;padding:1.6rem 1rem;display:flex;
+  flex-wrap:wrap;align-items:center;gap:.4rem 1rem;justify-content:space-between}
+.bandeau h1{font-size:1.25rem;margin:0;line-height:1.3}
+.bandeau .titre-metier{color:#bcd2e8;font-size:.95rem;margin:0}
+nav principale, nav[aria-label]{display:block}
+nav[aria-label="Navigation principale"] ul{display:flex;flex-wrap:wrap;gap:.25rem;
+  list-style:none;margin:0;padding:0}
+nav[aria-label="Navigation principale"] a{display:inline-block;padding:.5rem .8rem;
+  color:var(--blanc);text-decoration:none;border-radius:4px;font-size:.95rem}
+nav[aria-label="Navigation principale"] a:hover,nav[aria-label="Navigation principale"] a[aria-current="page"]{background:var(--accent)}
+main{max-width:960px;margin:0 auto;padding:1.5rem 1rem 3rem}
+footer.site{background:var(--bleu-nuit-2);color:#bcd2e8;padding:1.2rem 1rem;text-align:center;font-size:.85rem}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.lien-evitement{position:absolute;left:-9999px;top:0;background:var(--focus);
+  color:var(--bleu-nuit-2);padding:.6rem 1rem;z-index:100;font-weight:700}
+.lien-evitement:focus{left:0}
+h1{color:var(--bleu-nuit);border-bottom:3px solid var(--accent);padding-bottom:.25rem;font-size:1.6rem}
+h2{color:var(--bleu-nuit);border-bottom:3px solid var(--accent);padding-bottom:.25rem}
+h3{color:var(--bleu-nuit)}
+.carte{background:var(--blanc);border:1px solid var(--bordure);border-radius:8px;
+  padding:1.2rem 1.4rem;margin:1rem 0;box-shadow:0 1px 3px rgba(13,30,49,.06)}
+.carte h3{margin-top:0}
+.badge{display:inline-block;background:#e6f2f4;color:var(--accent);border:1px solid var(--accent);
+  border-radius:999px;padding:.15rem .7rem;font-size:.8rem;font-weight:600;margin-bottom:.4rem}
+.badge-niveau{display:inline-block;background:#fdf3e3;color:#8a5a00;border:1px solid #e0b25c;
+  border-radius:999px;padding:.15rem .7rem;font-size:.8rem;font-weight:600}
+.a-completer{color:#8a5a00;font-weight:600}
+.fiche-meta{font-size:.9rem;color:var(--texte-muted);margin:.2rem 0 .8rem}
+.fiche section{border-top:1px solid var(--bordure);padding:.8rem 0}
+.fiche section h3{font-size:1rem;margin:0 0 .3rem}
+.grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+table{border-collapse:collapse;width:100%;background:var(--blanc);font-size:.9rem}
+caption{text-align:left;font-weight:700;margin-bottom:.5rem;color:var(--bleu-nuit)}
+th,td{border:1px solid var(--bordure);padding:.5rem .6rem;vertical-align:top;text-align:left}
+th{background:var(--bleu-nuit);color:var(--blanc)}
+tbody tr:nth-child(even){background:#f8fafc}
+.table-responsive{overflow-x:auto}
+.competences-liste{columns:2;column-gap:2rem;margin:.5rem 0}
+.competences-liste li{break-inside:avoid}
+.note{background:#eef4f9;border-left:4px solid var(--accent);padding:.8rem 1rem;border-radius:0 6px 6px 0}
+.alerte{background:#fdf3e3;border-left:4px solid #e0b25c;padding:.8rem 1rem;border-radius:0 6px 6px 0}
+.btn{display:inline-block;background:var(--accent);color:var(--blanc)!important;
+  padding:.6rem 1.1rem;border-radius:6px;text-decoration:none;font-weight:600}
+.btn:hover{background:#18616f}
+img{max-width:100%;height:auto}
+@media (max-width:640px){
+  nav[aria-label="Navigation principale"] ul{flex-direction:column;gap:0}
+  nav[aria-label="Navigation principale"] a{display:block}
+  .competences-liste{columns:1}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
