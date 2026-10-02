@@ -1,11 +1,11 @@
 /**
  * Portfolio Nathan Rama — BTS SIO SISR
- * Script léger, robuste et accessible
+ * Performance & Accessibilité WCAG AA
  */
 (function () {
   'use strict';
 
-  // Navigation mobile accessible
+  // Navigation Mobile Accessible
   var burger = document.getElementById('burger');
   var nav = document.getElementById('menu-principal');
 
@@ -15,7 +15,6 @@
       burger.setAttribute('aria-expanded', ouvert ? 'true' : 'false');
     });
 
-    // Fermeture avec la touche Échap
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && nav.classList.contains('ouvert')) {
         nav.classList.remove('ouvert');
@@ -25,9 +24,30 @@
     });
   }
 
-  // Année courante dynamique
+  // Année dynamique
   var annee = document.getElementById('annee-courante');
   if (annee) {
     annee.textContent = String(new Date().getFullYear());
+  }
+
+  // IntersectionObserver fluide pour l'apparition des sections (sans lib)
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -40px 0px',
+      threshold: 0.05
+    });
+
+    var targets = document.querySelectorAll('.carte, .fiche, .hero-banner');
+    targets.forEach(function (el) {
+      el.classList.add('reveal-on-scroll');
+      observer.observe(el);
+    });
   }
 })();
