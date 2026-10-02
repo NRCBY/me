@@ -1,0 +1,70 @@
+/* ==========================================================================
+   DESIGN TOKENS — Nathan Rama Portfolio (BTS SIO SISR)
+   Conforme WCAG AA · Palette sobre Ingénierie Systèmes & Réseaux
+   ========================================================================== */
+
+:root {
+  /* Surfaces & Arrière-plans */
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #121216;
+  --bg-surface: #18181f;
+  --bg-surface-elevated: #22222b;
+  --bg-surface-hover: #292934;
+
+  /* Bordures */
+  --border-subtle: #272732;
+  --border-medium: #373746;
+  --border-focus: #6366f1;
+
+  /* Typographie & Couleurs de texte (Ratios WCAG AA >= 4.5:1 sur surfaces sombres) */
+  --text-primary: #f8fafc;       /* #f8fafc sur #0a0a0c => ratio 18:1 (AAA) */
+  --text-secondary: #cbd5e1;     /* #cbd5e1 sur #18181f => ratio 9.2:1 (AAA) */
+  --text-muted: #94a3b8;         /* #94a3b8 sur #18181f => ratio 5.1:1 (AA) */
+  --text-inverse: #09090b;
+
+  /* Accents Réseau & Infra (Inspirés protocoles/terminaux : Indigo / Cyan froid) */
+  --accent-primary: #6366f1;     /* Indigo moderne */
+  --accent-hover: #4f46e5;
+  --accent-glow: rgba(99, 102, 241, 0.15);
+  --accent-cyan: #38bdf8;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+
+  /* Typographie - Échelle & Polices */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Fira Code", "Cascadia Code", Menlo, Consolas, monospace;
+
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+
+  /* Espacement (Échelle stricte 4/8px) */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+
+  /* Rayons de courbure */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Transitions unifiées */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Ombres & Profondeur */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.6);
+}
