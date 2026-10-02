@@ -1,73 +1,27 @@
-# Portfolio — Nathan R., BTS SIO 2ème année option SISR
+# Nathan Rama — Portfolio BTS SIO SISR
 
-Portfolio statique présentant mes projets de formation, mon stage, mes projets
-personnels d'apprentissage, mon CV, mon tableau de synthèse E4 et ma veille
-technologique.
+> Portfolio personnel d'ingénierie réseaux et systèmes d'information, déployé sur GitHub Pages.
 
-**Établissement :** ESUPEC / Lycée Sainte-Marie, Cholet (2025-2026)
+[![Site Status](https://img.shields.io/badge/Status-Online-8B5CF6?style=flat-square)](https://nrcby.github.io/me/)
+[![Design System](https://img.shields.io/badge/Design-Quiet%20Premium%20Violet-08070B?style=flat-square&logo=visualstudiocode)](DESIGN.md)
+[![Accessibility](https://img.shields.io/badge/WCAG-2.1%20AA-22C55E?style=flat-square)](DESIGN.md)
 
-## Aucune installation
+## 🌐 Aperçu & URL en production
+- **Lien de consultation :** [https://nrcby.github.io/me/](https://nrcby.github.io/me/)
 
-Le site est 100 % statique : HTML, CSS et un seul fichier JavaScript sans
-dépendance. Aucun build, aucun `npm install`, aucune base de données.
+## 🛠️ Stack Technique
+- **Frontend :** HTML5 Sémantique, CSS3 Modulaire (Design Tokens), Vanilla JS natif (zéro dépendance externe).
+- **Design System :** *Quiet Premium Violet* — palette minérale noire (`#08070B`), accent unique violet-500 (`#8B5CF6`), typographie éditoriale contrastée.
+- **Hébergement :** GitHub Pages avec déploiement continu sur la branche `main`.
 
-Ouvrir `index.html` dans un navigateur suffit en local. Pour un rendu correct
-des liens relatifs et des headers, il est préférable de servir le dossier via
-un petit serveur local :
+## 📁 Structure du Projet
+- `css/tokens.css` : Définition des variables de couleurs, d'espacements (grille 4/8px) et d'échelles typographiques.
+- `css/layout.css` : Géométrie du site, en-tête sticky à flou optique, conteneurs et rythme vertical aéré.
+- `css/components.css` : Primitives de boutons, cartes asymétriques, badges pulsing et tables E4.
+- `js/main.js` : Détection de l'intersection observer pour les transitions d'entrée (stagger 60ms) et navigation mobile accessible.
+- `projets/` : Fiches techniques détaillant les projets de BTS et les réalisations en entreprise.
+- `tableau-e4.html` : Tableau de synthèse officiel des compétences SISR.
+- `DESIGN.md` : Charte graphique détaillée et documentation du système de design.
 
-```bash
-python3 -m http.server 8000
-# puis http://localhost:8000
-```
-
-## Arborescence
-
-```
-.
-├── index.html                  # Accueil
-├── cv.html                     # CV
-├── tableau-e4.html             # Tableau de synthèse E4
-├── veille.html                 # Veille technologique
-├── security.html               # Mesures de sécurité du site (et limites)
-├── projets/
-│   ├── index.html              # Liste des projets
-│   ├── stage-pcprotech.html
-│   ├── mfa-stage.html
-│   ├── maquette-packet-tracer.html
-│   ├── administration-windows-linux.html
-│   ├── analyse-executable-net.html
-│   ├── osint-renseignement.html
-│   ├── veille-owasp-top10.html
-│   └── opsec.html
-├── css/style.css
-├── js/main.js                  # Menu mobile + année ; aucun innerHTML
-├── _headers                    # Headers sécurité (Netlify / Cloudflare Pages)
-├── .htaccess                   # Équivalent Apache
-├── README.md
-├── SECURITY.md
-├── .gitignore
-└── CHECKLIST-PUBLICATION.md
-```
-
-## Remplacer les données d'exemple
-
-1. Rechercher `À COMPLÉTER` dans tout le dépôt :
-   `grep -rn "À COMPLÉTER" .`
-2. Renseigner chaque champ avec des données exactes et vérifiées. **Ne jamais
-   inventer** une mission, un outil, un résultat ou une compétence : si une
-   information n'existe pas, laisser le marqueur.
-3. Pour ajouter un projet : copier une fiche existante dans `projets/`, adapter,
-   puis ajouter une ligne dans `tableau-e4.html` et une carte dans
-   `projets/index.html`.
-
-## Déploiement
-
-- **Netlify / Cloudflare Pages :** glisser-déposer le dossier ; le fichier
-  `_headers` applique les headers de sécurité automatiquement.
-- **Apache :** copier le dossier ; le `.htaccess` applique les headers.
-- **GitHub Pages :** pousser sur un dépôt et activer Pages. **Limite :** GitHub
-  Pages ne permet pas de personnaliser les headers de sécurité — le site reste
-  statique sans compte ni donnée, mais la CSP devra être documentée comme
-  limitation (voir `security.html`).
-
-Avant toute publication : suivre `CHECKLIST-PUBLICATION.md`.
+---
+© 2026 Nathan Rama · ESUPEC Cholet

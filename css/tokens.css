@@ -1,74 +1,82 @@
 /* ==========================================================================
-   DESIGN TOKENS — Quiet Luxury / Noir & Violet Minimaliste
-   Nathan Rama — BTS SIO SISR Portfolio
-   WCAG AA Conforme · Contrastes stricts ≥ 4.5:1
+   DESIGN TOKENS — Quiet Premium Violet
+   Palette ultra-stricte · Typographie éditoriale · Contrastes WCAG AA
    ========================================================================== */
 
 :root {
-  /* Surfaces & Couleurs de Fond */
-  --bg-primary: #0A0A0B;          /* Noir profond minéral */
-  --bg-surface: #111114;          /* Surface standard */
-  --bg-surface-elevated: #141318; /* Surface carte / menu */
-  --bg-surface-hover: #1A1921;    /* Interaction hover */
+  /* Noirs profonds minéraux */
+  --bg-base:         #08070B;
+  --bg-elevated:     #0E0D12;
+  --bg-overlay:      #15131A;
+  --bg-surface-hover:#1A1822;
 
-  /* Bordures ultra-fines (1px rgba) */
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-medium: rgba(255, 255, 255, 0.10);
-  --border-hover: rgba(139, 92, 246, 0.4);
+  /* Bordures subtiles (1px) */
+  --border-subtle:   rgba(255, 255, 255, 0.06);
+  --border-default:  rgba(255, 255, 255, 0.10);
+  --border-strong:   rgba(255, 255, 255, 0.16);
 
-  /* Typographie & Couleurs de texte (Contraste ≥ 4.5:1) */
-  --text-primary: #F5F5F7;        /* Texte principal (contrast > 16:1 sur #0A0A0B) */
-  --text-secondary: #A1A1AA;      /* Zinc-400 (contrast ~ 6.5:1 sur #111114) */
-  --text-muted: #71717A;          /* Zinc-500 (usage tertiaire métadonnées) */
-  --text-inverse: #0A0A0B;
+  /* Famille Violet Unique (Joyau rare < 5% surface) */
+  --violet-500:      #8B5CF6;
+  --violet-400:      #A78BFA;
+  --violet-600:      #7C3AED;
+  --violet-glow:     rgba(139, 92, 246, 0.15);
+  --violet-tint:     rgba(139, 92, 246, 0.08);
+  --focus-ring:      #8B5CF6;
 
-  /* Accentuation Unique : Violet-500 (#8B5CF6) */
-  --accent-primary: #8B5CF6;
-  --accent-hover: #7C3AED;
-  --accent-subtle: rgba(139, 92, 246, 0.08);
-  --accent-glow: #A78BFA;
-  --focus-ring: #8B5CF6;
+  /* Textes & Hiérarchie en 4 Niveaux (Anti-Excel) */
+  --text-primary:    #F4F4F5;
+  --text-secondary:  #A1A1AA;
+  --text-tertiary:   #71717A;
+  --text-quaternary: #52525B;
 
-  /* Couleurs sémantiques sobres */
-  --color-success: #22C55E;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
+  /* Sémantique sobre */
+  --color-success:   #22C55E;
+  --color-warning:   #F59E0B;
+  --color-error:     #EF4444;
 
-  /* Typographie - Échelle stricte (12, 14, 16, 18, 20, 24, 32, 48, 64 px) */
-  --font-sans: -apple-system, BlinkMacSystemFont, "Geist", "Inter", -apple-system, system-ui, sans-serif;
+  /* Typographie - Geist / Inter stack */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Geist", "Inter Display", "Inter", system-ui, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "Fira Code", Menlo, monospace;
 
-  --text-12: 0.75rem;    /* 12px */
-  --text-14: 0.875rem;   /* 14px */
-  --text-16: 1rem;       /* 16px */
-  --text-18: 1.125rem;   /* 18px */
-  --text-20: 1.25rem;    /* 20px */
-  --text-24: 1.5rem;     /* 24px */
-  --text-32: 2rem;       /* 32px */
-  --text-48: 3rem;       /* 48px */
-  --text-64: 4rem;       /* 64px */
+  /* Échelle Typographique */
+  --text-eyebrow: 0.75rem;   /* 12px */
+  --text-small:   0.875rem;  /* 14px */
+  --text-body:    1rem;      /* 16px */
+  --text-intro:   1.125rem;  /* 18px */
+  --text-h3:      1.375rem;  /* 22px */
+  --text-h2:      2.25rem;   /* 36px */
+  --text-h1:      3.5rem;    /* 56px */
+  --text-display: 4.5rem;    /* 72px */
 
-  /* Espacement strict (4/8/12/16/24/32/48/64/96/128) */
-  --space-4: 0.25rem;
-  --space-8: 0.5rem;
-  --space-12: 0.75rem;
-  --space-16: 1rem;
-  --space-24: 1.5rem;
-  --space-32: 2rem;
-  --space-48: 3rem;
-  --space-64: 4rem;
-  --space-96: 6rem;
+  /* Espacement Stricte (4/8/12/16/24/32/48/64/96/128/160) */
+  --space-4:   0.25rem;
+  --space-8:   0.5rem;
+  --space-12:  0.75rem;
+  --space-16:  1rem;
+  --space-24:  1.5rem;
+  --space-32:  2rem;
+  --space-48:  3rem;
+  --space-64:  4rem;
+  --space-96:  6rem;
   --space-128: 8rem;
+  --space-160: 10rem;
 
-  /* Rayons de courbure (8px boutons/inputs, 12px cartes, 999px pills) */
-  --radius-button: 8px;
-  --radius-card: 12px;
+  /* Rayons géométriques (8/12/16/999) */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
   --radius-pill: 999px;
 
-  /* Durées & Easing (une seule échelle unifiée) */
-  --ease-micro: cubic-bezier(0.4, 0, 0.2, 1);
-  --ease-in-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --duration-micro: 150ms;
-  --duration-ui: 200ms;
-  --duration-enter: 400ms;
+  /* Ombres diffuses douces */
+  --shadow-sm:   0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md:   0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg:   0 12px 40px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.15);
+
+  /* Motion & Durées */
+  --ease-fast: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-slow: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-base: 220ms;
+  --duration-slow: 500ms;
 }

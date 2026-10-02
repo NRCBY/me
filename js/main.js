@@ -1,11 +1,10 @@
 /**
- * Portfolio Nathan Rama — BTS SIO SISR
- * Performance & Accessibilité WCAG AA
+ * Nathan Rama — BTS SIO SISR
+ * Motion performant, IntersectionObserver avec stagger 60ms
  */
 (function () {
   'use strict';
 
-  // Navigation Mobile Accessible
   var burger = document.getElementById('burger');
   var nav = document.getElementById('menu-principal');
 
@@ -24,19 +23,22 @@
     });
   }
 
-  // Année dynamique
   var annee = document.getElementById('annee-courante');
   if (annee) {
     annee.textContent = String(new Date().getFullYear());
   }
 
-  // IntersectionObserver fluide pour l'apparition des sections (sans lib)
+  // Apparition élégante avec décalage de 60ms
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          entry.target.classList.add('is-revealed');
-          observer.unobserve(entry.target);
+          var el = entry.target;
+          var delay = el.getAttribute('data-delay') || 0;
+          setTimeout(function () {
+            el.classList.add('is-revealed');
+          }, delay);
+          observer.unobserve(el);
         }
       });
     }, {
@@ -44,9 +46,10 @@
       threshold: 0.05
     });
 
-    var targets = document.querySelectorAll('.carte, .fiche, .hero-banner');
-    targets.forEach(function (el) {
-      el.classList.add('reveal-on-scroll');
+    var targets = document.querySelectorAll('.hero-banner, .featured-card, .carte, .fiche, .page-section');
+    targets.forEach(function (el, index) {
+      el.classList.add('reveal-item');
+      el.setAttribute('data-delay', (index % 4) * 60);
       observer.observe(el);
     });
   }

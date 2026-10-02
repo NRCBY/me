@@ -3,106 +3,171 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nathan Rama — BTS SIO SISR · Infrastructures & Systèmes</title>
+<meta name="description" content="Portfolio de Nathan Rama, étudiant en BTS SIO 2ème année option SISR : architectures réseaux, administration systèmes, sécurité et réalisations techniques.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#08070B">
+
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#0A0A0B">
-<title>Portfolio — Nathan Rama | BTS SIO 2ème année option SISR</title>
-<meta name="description" content="Portfolio de Nathan Rama, étudiant en BTS SIO 2ème année option SISR : infrastructures réseaux, administration systèmes, sécurité et réalisations techniques.">
-<meta name="color-scheme" content="dark">
+
+<!-- Open Graph & Social -->
+<meta property="og:title" content="Nathan Rama — BTS SIO SISR">
+<meta property="og:description" content="Infrastructures réseaux, administration systèmes et cybersécurité.">
+<meta property="og:image" content="https://nrcby.github.io/me/og-image.png">
+<meta property="og:url" content="https://nrcby.github.io/me/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="site-wrapper">
 <a class="lien-evitement" href="#contenu">Aller au contenu principal</a>
+
 <header class="site">
   <div class="bandeau">
-    <div>
-      <p class="brand-title">Nathan Rama</p>
-      <p class="titre-metier">BTS SIO 2ème année option SISR · Systèmes & Réseaux</p>
+    <div class="brand-wrapper">
+      <div class="brand-monogram">N</div>
+      <div class="brand-meta">
+        <a href="index.html" class="brand-title">Nathan Rama</a>
+        <span class="titre-metier">BTS SIO SISR · 2ème année</span>
+      </div>
     </div>
     <nav aria-label="Navigation principale">
       <button id="burger" class="btn-burger" aria-expanded="false" aria-controls="menu-principal" aria-label="Menu de navigation">Menu</button>
       <ul id="menu-principal">
         <li><a href="index.html" class="actif" aria-current="page">Accueil</a></li>
-        <li><a href="cv.html">CV</a></li>
         <li><a href="projets/index.html">Projets</a></li>
         <li><a href="tableau-e4.html">Tableau E4</a></li>
         <li><a href="veille.html">Veille</a></li>
+        <li><a href="cv.html">CV</a></li>
       </ul>
     </nav>
   </div>
 </header>
+
 <main id="contenu">
-<section class="hero-banner">
-  <div class="hero-tagline">Architecting Resilient Networks & Infrastructure</div>
-  <h1 class="hero-title">Nathan Rama</h1>
-  <p class="hero-desc">
-    Étudiant en <strong>BTS SIO 2ème année option SISR</strong> à ESUPEC / Lycée Sainte-Marie, Cholet.
-    Passionné par l'administration systèmes (Linux/Windows Server), le routage Cisco, la sécurité des accès et la supervision d'infrastructures d'entreprise.
-  </p>
-  <div class="hero-actions">
-    <a href="projets/index.html" class="btn">Explorer mes projets</a>
-    <a href="mailto:nathan.rama001@gmail.com" class="btn btn-secondary">Me contacter</a>
-    <a href="cv.html" class="btn btn-secondary">Consulter le CV</a>
-  </div>
-</section>
+  <!-- SECTION HERO ASYMÉTRIQUE -->
+  <section class="hero-banner">
+    <div class="eyebrow-container">
+      <span class="eyebrow-trait"></span>
+      <span class="eyebrow-text">Architecture Réseau & Systèmes</span>
+    </div>
+    <h1 class="hero-title">Construire des réseaux résilients et sécurisés.</h1>
+    <p class="hero-desc">
+      Étudiant en <strong>BTS SIO option SISR</strong> à l'ESUPEC Cholet.
+      Spécialisé en administration systèmes Linux et Windows Server, segmentation VLAN,
+      durcissement d'infrastructures et politiques d'accès d'entreprise.
+    </p>
+    <div class="hero-actions">
+      <a href="projets/index.html" class="btn">Explorer mes projets ↗</a>
+      <a href="mailto:nathan.rama001@gmail.com" class="btn btn-secondary">Me contacter</a>
+      <a href="cv.html" class="btn btn-secondary">Consulter le CV</a>
+    </div>
+  </section>
 
-<h2>Compétences & Domaines clés</h2>
-<div class="grille">
-  <div class="carte">
-    <span class="badge">Systèmes</span>
-    <h3>Administration Systèmes</h3>
-    <p>Windows Server (Active Directory, GPO, DNS, DHCP), distributions Linux (Debian, Ubuntu), scripts d'automatisation PowerShell et Bash.</p>
-  </div>
-  <div class="carte">
-    <span class="badge">Réseaux</span>
-    <h3>Infrastructures Réseaux</h3>
-    <p>Architecture LAN/VLAN, routage inter-VLAN, protocoles de routage, maquettage sous Cisco Packet Tracer, adressage IPv4/IPv6.</p>
-  </div>
-  <div class="carte">
-    <span class="badge">Cybersécurité</span>
-    <h3>Sécurité & Conformité</h3>
-    <p>Authentification multifacteur (MFA), règles OPSEC, sensibilisation OWASP Top 10, analyse statique de binaires et méthodologie OSINT.</p>
-  </div>
-  <div class="carte">
-    <span class="badge">Support & Exploitation</span>
-    <h3>Support & Maintenance</h3>
-    <p>Diagnostic d'incidents matériels et logiciels, télé-assistance, déploiement de postes et bonnes pratiques ITIL.</p>
-  </div>
-</div>
+  <!-- SECTION PROJET MAJEUR (FEATURED CARD) -->
+  <section class="page-section">
+    <div class="eyebrow-container">
+      <span class="eyebrow-trait"></span>
+      <span class="eyebrow-text">Réalisation Majeure · Stage</span>
+    </div>
+    
+    <div class="featured-card">
+      <div class="badge-status">
+        <span class="status-dot"></span>
+        <span>Stage Entreprise · 2026</span>
+      </div>
+      <h3><a href="projets/stage-pcprotech.html">Déploiement d'infrastructure & support chez PC PRO TECH</a></h3>
+      <p>
+        Immersion au cœur de l'assistance et de la maintenance d'infrastructures informatiques d'entreprise.
+        Diagnostic d'incidents complexes, télé-assistance, sécurisation des accès et observation de politiques d'authentification multifacteur.
+      </p>
+      <div class="featured-meta">
+        <span>Windows Server</span>
+        <span>·</span>
+        <span>Active Directory</span>
+        <span>·</span>
+        <span>MFA</span>
+        <span>·</span>
+        <span>Support IT</span>
+        <span style="margin-left: auto;"><a href="projets/stage-pcprotech.html" style="color:var(--violet-400); text-decoration:none;">Consulter la fiche détaillée ↗</a></span>
+      </div>
+    </div>
 
-<h2>Parcours & Épreuves du BTS</h2>
-<div class="grille">
-  <div class="carte">
-    <h3><a href="projets/index.html">Projets & Réalisations techniques</a></h3>
-    <p>Stage PC PRO TECH, maquette réseau Packet Tracer, lab Windows/Linux et projets d'apprentissage en sécurité.</p>
-  </div>
-  <div class="carte">
-    <h3><a href="tableau-e4.html">Tableau de synthèse E4</a></h3>
-    <p>Matrice croisant les réalisations en entreprise et en formation avec les compétences du référentiel officiel BTS SIO.</p>
-  </div>
-  <div class="carte">
-    <h3><a href="veille.html">Veille technologique</a></h3>
-    <p>Sujets suivis, sources d'information, outils de veille automatisée et synthèse d'actualité cyber & réseau.</p>
-  </div>
-  <div class="carte">
-    <h3><a href="cv.html">Curriculum Vitae</a></h3>
-    <p>Formations académiques, certifications préparées, expériences professionnelles et coordonnées complètes.</p>
-  </div>
-</div>
+    <!-- GRILLE DUO 2 COLONNES (LABS & SÉCURITÉ) -->
+    <div class="grille-duo">
+      <div class="carte">
+        <div>
+          <span class="badge-status">Lab Technique</span>
+          <h3><a href="projets/maquette-packet-tracer.html">Maquette Réseau Cisco Packet Tracer</a></h3>
+          <p>Conception d'une architecture inter-sites avec segmentation LAN/VLAN, routage dynamique, serveurs DHCP/DNS et contrôle d'accès par ACL.</p>
+        </div>
+        <div class="featured-meta">
+          <span>Routage VLAN</span>
+          <span>·</span>
+          <span>Cisco</span>
+          <a href="projets/maquette-packet-tracer.html" style="margin-left:auto; color:var(--violet-400); text-decoration:none;">Fiche ↗</a>
+        </div>
+      </div>
 
-<div class="note">
-  <strong>Transparence & Déontologie :</strong> Les projets d'apprentissage en cybersécurité sont menés dans un cadre de formation encadré (laboratoires virtuels isolés, données fictives) et ne constituent en aucun cas des audits ou interventions professionnelles non autorisées.
-</div>
+      <div class="carte">
+        <div>
+          <span class="badge-status">Administration</span>
+          <h3><a href="projets/administration-windows-linux.html">Lab Systèmes Windows Server & Debian</a></h3>
+          <p>Mise en place d'un domaine Active Directory, stratégies de groupe (GPO), services d'annuaire et automatisation de tâches récurrentes via scripts PowerShell et Bash.</p>
+        </div>
+        <div class="featured-meta">
+          <span>Active Directory</span>
+          <span>·</span>
+          <span>Linux</span>
+          <a href="projets/administration-windows-linux.html" style="margin-left:auto; color:var(--violet-400); text-decoration:none;">Fiche ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- SECTION COMPÉTENCES & DOMAINES D'EXPERTISE -->
+  <section class="page-section">
+    <div class="eyebrow-container">
+      <span class="eyebrow-trait"></span>
+      <span class="eyebrow-text">Domaines d'Intervention</span>
+    </div>
+    <h2 class="section-heading">Expertise technique & Référentiel SISR</h2>
+
+    <div class="grille-duo">
+      <div class="carte">
+        <h3>Systèmes & Automatisation</h3>
+        <p>Administration approfondie d'environnements Microsoft Windows Server (AD DS, GPO, DNS, DHCP) et distributions Linux (Debian, Ubuntu Server). Écriture de scripts d'exploitation et de déploiement (PowerShell, Bash).</p>
+      </div>
+
+      <div class="carte">
+        <h3>Réseaux & Télécommunications</h3>
+        <p>Architecture de réseaux locaux d'entreprise, plan d'adressage IPv4/IPv6, découpage en sous-réseaux, commutateurs managés, routage inter-VLAN et protocoles de supervision.</p>
+      </div>
+
+      <div class="carte">
+        <h3>Cybersécurité Opérationnelle</h3>
+        <p>Mise en conformité des règles d'hygiène informatique (ANSSI), principes OPSEC, sensibilisation au top 10 OWASP, analyse statique de code et méthodes de collecte en sources ouvertes (OSINT).</p>
+      </div>
+
+      <div class="carte">
+        <h3>Épreuves Officielles du BTS</h3>
+        <p>Documentation des compétences certifiées pour l'épreuve E4 et synthèse globale du parcours scolaire et professionnel.</p>
+        <p style="margin-top:auto;"><a href="tableau-e4.html" style="color:var(--violet-400); text-decoration:none;">Accéder au Tableau de synthèse E4 ↗</a></p>
+      </div>
+    </div>
+  </section>
 </main>
+
 <footer class="site">
-  <p>Nathan Rama — Étudiant en BTS SIO 2ème année option SISR · ESUPEC / Lycée Sainte-Marie, Cholet · <span id="annee-courante"></span></p>
+  <p>Nathan Rama — Étudiant en BTS SIO SISR (2024–2026) · Cholet</p>
   <p>Contact : <a href="mailto:nathan.rama001@gmail.com">nathan.rama001@gmail.com</a> · <a href="security.html">Sécurité du site</a></p>
+  <p style="font-size: 12px; margin-top: 16px;">© <span id="annee-courante"></span> Nathan Rama · Tous droits réservés.</p>
 </footer>
-</div>
+
 <script src="js/main.js" defer></script>
 </body>
 </html>
