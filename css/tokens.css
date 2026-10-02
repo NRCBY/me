@@ -79,4 +79,13 @@
   --duration-fast: 150ms;
   --duration-base: 220ms;
   --duration-slow: 500ms;
+  /* Échelle globale de Stacking Context (z-index) */
+  --z-negative: -1;
+  --z-base: 1;
+  --z-elevated: 10;
+  --z-dropdown: 50;
+  --z-sticky: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+
 }

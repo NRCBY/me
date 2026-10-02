@@ -12,6 +12,8 @@ html {
   scroll-behavior: smooth;
   background-color: var(--bg-base);
   color-scheme: dark;
+
+  scroll-padding-top: 96px;
 }
 
 body {
@@ -70,11 +72,11 @@ body {
 header.site {
   position: sticky;
   top: 0;
-  z-index: 50;
-  background-color: rgba(8, 7, 11, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border-subtle);
+  z-index: var(--z-sticky);
+  background-color: rgba(8, 7, 11, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-default);
 }
 
 .bandeau {
